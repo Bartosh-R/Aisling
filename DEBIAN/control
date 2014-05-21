@@ -1,0 +1,7 @@
+Package: aisling
+Version: 1.0
+Section: games
+Maintainer: Bartosz Rumiński <bartoshx@gmail.com>
+Architecture: all
+Depends: python
+Description: Handy Translator. Just mark text and press Ctrl+Q

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Aisling
+Version=1.0
+Comment=Handy Translator
+GenericName=Aisling
+Terminal=false
+Icon=aisling-icon.png
+Type=Application
+Exec=python /usr/share/aisling/run.py
+Categories=Game;
+Name[pl]=Aisling
