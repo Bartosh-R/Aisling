@@ -7,6 +7,7 @@ from Window import Window
 
 import time
 import sys
+import autostart
 
 import os
 
