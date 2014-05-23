@@ -36,8 +36,10 @@ class Window (Gtk.Window):
 		self.show_all()
 
 	def set_word(self, word):
-		self.label.set_justify(Gtk.Justification.FILL)
+		#self.label.set_justify(Gtk.Justification.FILL)
 		self.label.set_markup("<span foreground=\"white\" size=\"x-large\">"+word+"</span>")
+		self.resize(1,1) # just for a redraw
+
 
 	def scroll(self, widget, event):
 		if event.direction == 1 and self.current > 0: # scroll_down

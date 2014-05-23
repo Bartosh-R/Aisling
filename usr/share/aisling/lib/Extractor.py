@@ -31,7 +31,7 @@ class Extractor:
 
 		for item in result:
 			napis = item[prefix:-postfix]
-			napis = self.odkoduj(napis)
+			#napis = self.odkoduj(napis)
 			if self.check(napis) == False:
 				self.words.append(napis)
 
