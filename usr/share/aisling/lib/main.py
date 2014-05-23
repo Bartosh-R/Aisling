@@ -36,7 +36,7 @@ def show_window():
     selection = getSelection()
     ext = Extractor(selection)
     
-    Window(ext.words[0])
+    Window(ext.words)
     Gtk.main()
     #print ext.words
 
