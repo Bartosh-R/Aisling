@@ -18,6 +18,10 @@ Q_code = 24
 W_code = 25
 
 
+os.chdir("/usr/share/aisling/")
+DATA = os.path.join("data")
+KNOCK = os.path.join(DATA, "knock.wav")
+
 def handle_event(aEvent):
     keycode = aEvent.detail
     if aEvent.type == X.KeyPress:
@@ -37,8 +41,11 @@ def show_window():
     selection = getSelection()
     ext = Extractor(selection)
     
-    Window(ext.words)
-    Gtk.main()
+    if  not ext.words:
+        os.system("aplay "+KNOCK)
+    else:
+        Window(ext.words)
+        Gtk.main()
     #print ext.words
 
 def main():

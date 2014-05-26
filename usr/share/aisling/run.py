@@ -20,8 +20,8 @@ import autostart
 
 """Autorstart - make .desktop file in ~/.conifig/autostart"""
 app = "python "+os.path.abspath(__file__)
-if autostart.exists("aisling") == False:
-	autostart.add("aisling", app)
+if autostart.exists("Aisling") == False:
+	autostart.add("Aisling", app)
 
 import main
 main.main()
